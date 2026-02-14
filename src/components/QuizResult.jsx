@@ -78,7 +78,8 @@ export default function QuizResult({ score, onContinue }) {
           className="animate-gentle-pulse bg-rose text-white font-inter font-semibold text-base rounded-full shadow-lg hover:shadow-xl hover:bg-rose/90 transition-all cursor-pointer"
           style={{ padding: '0.85rem 2rem' }}
         >
-          A Letter For You 💌
+          <span className="inline-flex items-center gap-2">A Letter For You
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="w-5 h-5"><rect x="2" y="6" width="20" height="14" rx="2" /><path d="m2 6 10 7 10-7" /><path d="M12 6c-1-2-4-3.5-5-1.5S9 8 12 11c3-3 6.5-4.5 5-6.5S13 4 12 6z" fill="currentColor" stroke="none" /></svg></span>
         </motion.button>
       </motion.div>
     </div>

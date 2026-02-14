@@ -47,12 +47,37 @@ export default function ClosingScreen({ onReplay }) {
         className="text-center z-10 max-w-md"
       >
         <motion.div
-          initial={{ scale: 0 }}
-          animate={{ scale: 1 }}
+          initial={{ scale: 0, opacity: 0 }}
+          animate={{ scale: 1, opacity: 1 }}
           transition={{ type: 'spring', delay: 0.3, stiffness: 150 }}
-          className="text-7xl mb-6"
+          className="mb-6 flex justify-center"
         >
-          ❤️
+          <motion.svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 200 100"
+            className="w-32 h-16"
+            animate={{ scale: [1, 1.06, 1] }}
+            transition={{ duration: 3, repeat: Infinity, ease: 'easeInOut' }}
+          >
+            <motion.path
+              d="M100 50 C80 20, 30 -10, 15 30 C5 55, 40 80, 100 50 C160 80, 195 55, 185 30 C170 -10, 120 20, 100 50 Z"
+              fill="none"
+              stroke="#FB7185"
+              strokeWidth="3"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              initial={{ pathLength: 0 }}
+              animate={{ pathLength: 1 }}
+              transition={{ duration: 2.5, delay: 0.5, ease: 'easeInOut' }}
+            />
+            <motion.path
+              d="M100 50 C80 20, 30 -10, 15 30 C5 55, 40 80, 100 50 C160 80, 195 55, 185 30 C170 -10, 120 20, 100 50 Z"
+              fill="#FB7185"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 0.12 }}
+              transition={{ duration: 1, delay: 2.5 }}
+            />
+          </motion.svg>
         </motion.div>
 
         <motion.h2
