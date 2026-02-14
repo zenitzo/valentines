@@ -34,6 +34,7 @@ export default function App() {
     if (audio) {
       audio.volume = 0.3
       audio.loop = true
+      audio.currentTime = 5
       audio.play().catch(() => {})
       setMusicStarted(true)
     }
