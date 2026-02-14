@@ -19,12 +19,12 @@ export default function QuizQuestion({ question, onAnswer }) {
   const isCorrect = selected === question.correctIndex
 
   return (
-    <div className="bg-white/60 backdrop-blur-sm rounded-3xl p-6 shadow-lg">
-      <h3 className="font-caveat text-2xl sm:text-3xl text-burgundy mb-6 text-center">
+    <div className="bg-white/60 backdrop-blur-sm rounded-3xl px-5 pt-14 pb-10 shadow-lg min-h-[24rem] flex flex-col" style={{ paddingTop: '3.5rem', paddingBottom: '2.5rem' }}>
+      <h3 className="font-caveat text-2xl sm:text-3xl text-burgundy mb-8 text-center">
         {question.question}
       </h3>
 
-      <div className="space-y-3">
+      <div className="flex-1 flex flex-col justify-evenly px-6" style={{ padding: '0 1.5rem' }}>
         {question.options.map((option, i) => {
           let bgClass = 'bg-white hover:bg-blush/50'
           if (revealed) {
@@ -44,7 +44,8 @@ export default function QuizQuestion({ question, onAnswer }) {
               whileTap={!revealed ? { scale: 0.98 } : {}}
               onClick={() => handleSelect(i)}
               disabled={revealed}
-              className={`w-full text-left px-5 py-4 rounded-2xl border-2 border-transparent font-inter text-burgundy transition-all cursor-pointer ${bgClass}`}
+              className={`w-full text-left px-8 py-4 rounded-2xl border-2 border-transparent font-inter text-burgundy transition-all cursor-pointer ${bgClass}`}
+              style={{ paddingLeft: '2rem', paddingRight: '2rem' }}
             >
               {option}
             </motion.button>
