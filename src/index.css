@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+@theme {
+  --font-caveat: "Caveat", cursive;
+  --font-inter: "Inter", sans-serif;
+  --color-blush: #FFE4E6;
+  --color-cream: #FFF7ED;
+  --color-rose: #FB7185;
+  --color-rose-light: #F9A8D4;
+  --color-burgundy: #881337;
+  --color-peach: #FFDAB9;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #FFF7ED;
+  color: #881337;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+/* Pulse animation for CTA button */
+@keyframes gentle-pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+
+.animate-gentle-pulse {
+  animation: gentle-pulse 2s ease-in-out infinite;
+}
+
+/* Floating hearts */
+@keyframes float-up {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100vh) rotate(720deg);
+    opacity: 0;
+  }
+}
+
+.animate-float-up {
+  animation: float-up linear infinite;
+}

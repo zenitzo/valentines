@@ -1,0 +1,15 @@
+export const letterLines = [
+  "So... I built you a whole website.",
+  "Because a card from Target felt low-effort.",
+  "And I love you more than that. Barely. 😏",
+  "Remember when we first met and I was trying so hard to play it cool?",
+  "Yeah, I was not cool. At all.",
+  "But somehow you still chose me.",
+  "You're the person I want to annoy for the rest of my life.",
+  "The one I want to share every pizza with.",
+  "Even when you steal my fries. Every. Single. Time.",
+  "But for real — you make everything better.",
+  "My worst days are better because you're in them.",
+  "And I can't wait to marry you.",
+  "Happy Valentine's Day, Maria. ❤️",
+]

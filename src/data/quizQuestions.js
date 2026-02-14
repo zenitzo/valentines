@@ -1,0 +1,76 @@
+export const quizQuestions = [
+  {
+    question: "What's my most annoying habit?",
+    options: [
+      "Leaving cabinets open",
+      "Saying 'one more game' at midnight",
+      "All of the above",
+      "I'm literally perfect",
+    ],
+    correctIndex: 2,
+    correctResponse: "Yeah... I'm working on it. Kind of.",
+    wrongResponse: "You sure you wanna marry me? Lol",
+  },
+  {
+    question: "What was our first date?",
+    options: [
+      "Coffee and awkward silence",
+      "Dinner and a movie",
+      "We haven't had one yet (oops)",
+      "I cooked for you (brave, I know)",
+    ],
+    correctIndex: 1,
+    correctResponse: "Classic. And it worked!",
+    wrongResponse: "Hmm... do we need to redo it?",
+  },
+  {
+    question: "What food could I eat every single day?",
+    options: ["Pizza", "Tacos", "Wings", "Your cooking (obviously)"],
+    correctIndex: 0,
+    correctResponse: "You know me too well 🍕",
+    wrongResponse: "Close, but pizza is the answer to everything.",
+  },
+  {
+    question: "What do I love most about you?",
+    options: [
+      "Your smile",
+      "Your laugh",
+      "How you put up with me",
+      "All of the above (duh)",
+    ],
+    correctIndex: 3,
+    correctResponse: "It's always all of the above when it comes to you.",
+    wrongResponse: "Trick question — it's everything. Always.",
+  },
+  {
+    question: "Where are we going on our honeymoon?",
+    options: [
+      "Somewhere tropical 🌴",
+      "Europe tour 🗼",
+      "Staycation (we're broke lol)",
+      "Surprise trip ✈️",
+    ],
+    correctIndex: 0,
+    correctResponse: "Beach vibes only! 🏖️",
+    wrongResponse: "As long as we're together, right? ...Right??",
+  },
+  {
+    question: "What's our song?",
+    options: [
+      "Something romantic",
+      "Something we argue about",
+      "We don't have one (yet)",
+      "Every song reminds me of you",
+    ],
+    correctIndex: 3,
+    correctResponse: "Smooth answer. You're good at this.",
+    wrongResponse: "Wrong, but honestly every song does remind me of you.",
+  },
+  {
+    question: "Will you be my Valentine? (forever)",
+    options: ["Yes 💕", "Obviously yes", "Was there ever a doubt?", "YES"],
+    correctIndex: 0,
+    correctResponse: "Best answer you've ever given. 💕",
+    wrongResponse: "They're all correct, you goofball. 💕",
+  },
+]
