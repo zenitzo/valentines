@@ -41,36 +41,28 @@ export default function LandingScreen({ onStart }) {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: 'easeOut' }}
-        className="text-center z-10"
+        className="text-center z-10 flex flex-col items-center gap-16"
       >
         <motion.h1
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="font-caveat text-[2.4rem] sm:text-6xl md:text-7xl text-burgundy mb-4 leading-tight whitespace-nowrap"
+          className="font-caveat text-[3rem] sm:text-7xl md:text-8xl text-burgundy mb-24 leading-tight whitespace-nowrap"
         >
           Happy Valentine's Day
           <br />
           My Love
         </motion.h1>
 
-        <motion.p
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.6, delay: 0.6 }}
-          className="font-inter text-burgundy/70 text-sm sm:text-lg mb-10 whitespace-nowrap"
-        >
-          I made you a website because I'm extra like that
-        </motion.p>
-
         <motion.button
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 1 }}
           onClick={onStart}
-          className="animate-gentle-pulse bg-rose text-white font-inter font-semibold text-lg px-8 py-4 rounded-full shadow-lg hover:shadow-xl hover:bg-rose/90 transition-all cursor-pointer"
+          className="mt-16 animate-gentle-pulse bg-rose text-white font-inter font-semibold text-lg rounded-full shadow-lg hover:shadow-xl hover:bg-rose/90 transition-all cursor-pointer"
+          style={{ padding: '1rem 2.5rem' }}
         >
-          Open Your Valentine 💌
+          Open Your Gift 💌
         </motion.button>
       </motion.div>
     </div>
