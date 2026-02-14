@@ -40,9 +40,12 @@ export default function QuizResult({ score, onContinue }) {
         className="text-center"
       >
         <motion.div
-          initial={{ scale: 0 }}
-          animate={{ scale: 1 }}
-          transition={{ type: 'spring', delay: 0.2, stiffness: 200 }}
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: [1, 1.15, 1] }}
+          transition={{
+            opacity: { duration: 0.4, delay: 0.2 },
+            scale: { duration: 2, repeat: Infinity, ease: 'easeInOut', delay: 0.6 },
+          }}
           className="text-7xl mb-4"
         >
           {emoji}
