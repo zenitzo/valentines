@@ -62,7 +62,8 @@ export default function QuizResult({ score, onContinue }) {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1.5 }}
-          className="font-inter text-burgundy/80 text-lg max-w-sm mx-auto mb-10"
+          className="font-inter text-burgundy/80 text-lg max-w-sm mx-auto"
+          style={{ marginBottom: '4.5rem' }}
         >
           {message}
         </motion.p>
@@ -74,9 +75,10 @@ export default function QuizResult({ score, onContinue }) {
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
           onClick={onContinue}
-          className="bg-rose text-white font-inter font-semibold text-lg px-8 py-4 rounded-full shadow-lg cursor-pointer"
+          className="animate-gentle-pulse bg-rose text-white font-inter font-semibold text-base rounded-full shadow-lg hover:shadow-xl hover:bg-rose/90 transition-all cursor-pointer"
+          style={{ padding: '0.85rem 2rem' }}
         >
-          I Wrote You Something ✉️
+          A Letter For You 💌
         </motion.button>
       </motion.div>
     </div>

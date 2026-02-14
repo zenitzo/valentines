@@ -31,7 +31,7 @@ export default function LoveLetter({ onContinue }) {
         variants={containerVariants}
         initial="hidden"
         animate="visible"
-        className="max-w-lg w-full space-y-6"
+        className="max-w-sm w-full space-y-4 px-2"
       >
         {letterLines.map((line, i) => (
           <motion.p
@@ -51,7 +51,8 @@ export default function LoveLetter({ onContinue }) {
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
         onClick={onContinue}
-        className="mt-12 bg-rose text-white font-inter font-semibold text-lg px-8 py-4 rounded-full shadow-lg cursor-pointer"
+        className="bg-rose text-white font-inter font-semibold text-base rounded-full shadow-lg cursor-pointer hover:shadow-xl hover:bg-rose/90 transition-all"
+        style={{ padding: '0.85rem 2rem', marginTop: '5rem' }}
       >
         See Our Memories 📸
       </motion.button>
