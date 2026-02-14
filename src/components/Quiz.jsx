@@ -35,7 +35,7 @@ export default function Quiz({ onComplete }) {
             className="text-center"
           >
             <h2 className="font-caveat text-4xl sm:text-5xl text-burgundy mb-4">
-              Pop Quiz Time! 📝
+              Pop Quiz Time!
             </h2>
             <p className="font-inter text-burgundy/70 text-lg mb-8 max-w-sm mx-auto">
               How well do you actually know us?
@@ -44,9 +44,10 @@ export default function Quiz({ onComplete }) {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               onClick={() => setCurrentIndex(0)}
-              className="bg-rose text-white font-inter font-semibold text-lg px-8 py-4 rounded-full shadow-lg cursor-pointer"
+              className="bg-rose text-white font-inter font-semibold text-lg rounded-full shadow-lg cursor-pointer"
+              style={{ padding: '0.85rem 2rem', marginTop: '2rem' }}
             >
-              Let's Go! 🎯
+              Let's Go!
             </motion.button>
           </motion.div>
         ) : (
