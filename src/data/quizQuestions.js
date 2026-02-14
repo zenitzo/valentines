@@ -9,7 +9,7 @@ export const quizQuestions = [
     ],
     correctIndex: 2,
     correctResponse: "Yeah... I'm working on it. Kind of.",
-    wrongResponse: "You sure you wanna marry me? Lol",
+    wrongResponse: "Cmon lock in clown 🤡",
   },
   {
     question: "What was our first date?",
