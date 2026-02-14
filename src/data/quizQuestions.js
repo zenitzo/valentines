@@ -2,10 +2,10 @@ export const quizQuestions = [
   {
     question: "What's my most annoying habit?",
     options: [
-      "Leaving cabinets open",
+      "Horrible communication skills",
       "Saying 'one more game' at midnight",
       "All of the above",
-      "I'm literally perfect",
+      "You're literally perfect",
     ],
     correctIndex: 2,
     correctResponse: "Yeah... I'm working on it. Kind of.",
@@ -14,12 +14,12 @@ export const quizQuestions = [
   {
     question: "What was our first date?",
     options: [
-      "Coffee and awkward silence",
-      "Dinner and a movie",
-      "We haven't had one yet (oops)",
-      "I cooked for you (brave, I know)",
+      "Sushi Sake",
+      "We went to the movies",
+      "Dinner at KYU",
+      "I cooked for you",
     ],
-    correctIndex: 1,
+    correctIndex: 0,
     correctResponse: "Classic. And it worked!",
     wrongResponse: "Hmm... do we need to redo it?",
   },
