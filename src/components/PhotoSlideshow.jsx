@@ -2,10 +2,10 @@ import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 
 const placeholderPhotos = [
-  { src: '/photos/1.jpg', caption: 'Our first adventure together' },
-  { src: '/photos/2.jpg', caption: 'That time we couldn\'t stop laughing' },
+  { src: '/photos/1.jpg', caption: 'our first time going to chicago' },
+  { src: '/photos/2.jpg', caption: 'best day of our lives' },
   { src: '/photos/3.jpg', caption: 'My favorite picture of us' },
-  { src: '/photos/4.jpg', caption: 'Making memories every day' },
+  { src: '/photos/4.jpg', caption: 'Our nene loves you very much' },
   { src: '/photos/5.jpg', caption: 'Forever my favorite person' },
 ]
 
@@ -86,7 +86,7 @@ export default function PhotoSlideshow({ onContinue }) {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
-          className="font-caveat text-xl text-burgundy/70 mb-4 text-center"
+          className="font-caveat text-xl text-burgundy/70 mt-2 mb-4 text-center"
         >
           {photos[currentIndex].caption}
         </motion.p>
@@ -111,7 +111,8 @@ export default function PhotoSlideshow({ onContinue }) {
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
         onClick={onContinue}
-        className="bg-rose text-white font-inter font-semibold text-lg px-8 py-4 rounded-full shadow-lg cursor-pointer"
+        className="bg-rose text-white font-inter font-semibold text-base rounded-full shadow-lg cursor-pointer hover:shadow-xl hover:bg-rose/90 transition-all"
+        style={{ padding: '0.85rem 2rem', marginTop: '2rem' }}
       >
         One More Thing... ❤️
       </motion.button>

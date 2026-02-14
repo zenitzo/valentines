@@ -79,7 +79,7 @@ export default function ClosingScreen({ onReplay }) {
           transition={{ delay: 1.5 }}
           className="font-caveat text-3xl text-rose mb-10"
         >
-          Happy Valentine's Day, Maria ❤️
+          Happy Valentine's Day
         </motion.p>
 
         <motion.button
@@ -89,9 +89,10 @@ export default function ClosingScreen({ onReplay }) {
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
           onClick={onReplay}
-          className="bg-white/70 backdrop-blur-sm text-burgundy font-inter font-semibold px-8 py-4 rounded-full shadow-lg hover:bg-white transition-all cursor-pointer"
+          className="bg-rose text-white font-inter font-semibold text-base rounded-full shadow-lg cursor-pointer hover:shadow-xl hover:bg-rose/90 transition-all"
+          style={{ padding: '0.85rem 2rem', marginTop: '2rem' }}
         >
-          Start Over 🔄
+          Start Over
         </motion.button>
       </motion.div>
     </div>
