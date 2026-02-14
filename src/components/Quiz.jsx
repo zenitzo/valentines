@@ -59,19 +59,22 @@ export default function Quiz({ onComplete }) {
             transition={{ duration: 0.4 }}
             className="w-full max-w-sm"
           >
-            <div className="text-center mb-6">
-              <div className="flex justify-center gap-2 mb-2">
+            <div className="text-center" style={{ marginBottom: '2.5rem' }}>
+              <div className="flex justify-center gap-2 mb-4">
                 {quizQuestions.map((_, i) => (
-                  <div
+                  <svg
                     key={i}
-                    className={`w-2.5 h-2.5 rounded-full transition-colors ${
+                    viewBox="0 0 24 24"
+                    className={`w-4 h-4 transition-colors ${
                       i === currentIndex
-                        ? 'bg-rose'
+                        ? 'fill-rose'
                         : i < currentIndex
-                        ? 'bg-rose/40'
-                        : 'bg-burgundy/20'
+                        ? 'fill-rose/40'
+                        : 'fill-burgundy/20'
                     }`}
-                  />
+                  >
+                    <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                  </svg>
                 ))}
               </div>
               <p className="font-inter text-burgundy/50 text-sm">
